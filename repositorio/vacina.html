@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo do Seminário</title>
+    <style>
+        body {
+            font-family: ebrima, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc; /* Cor de fundo bege */
+        }
+        header {
+            background-color: #8b4513; /* Marrom escuro para o cabeçalho */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #a0522d; /* Marrom moderado para a barra de navegação */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #000000; /* Cor do texto para títulos */
+        }
+        footer {
+            background-color: #8b4513; /* Marrom escuro para o rodapé */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Formação Sócio-Histórica do Brasil e Serviço Social</h1>
+    </header>
+
+    <nav>
+        <a onclick="showTab('resumo')">Resumo</a>
+        <a onclick="showTab('materiais')">Materiais</a>
+        <a onclick="showTab('contact')">Contato</a>
+    </nav>
+
+    <div class="container">
+        <div id="resumo" class="tab-content active">
+            <h2>Resumo</h2>
+            <p>Este site foi desenvolvido com intuito de organizar as principais abordagens trazidas pelo seminário. Caso restem dúvidas, volte aqui sempre que precisar. Deixaremos tudo de forma sistematizada, incluindo os materiais de aula, como nossos slides.</p>
+            <ul>
+                <li>Ponto principal 1</li>
+                <li>Ponto principal 2</li>
+                <li>Ponto principal 3</li>
+            </ul>
+        </div>
+
+        <div id="materiais" class="tab-content">
+            <h2>Materiais</h2>
+            <p>Adicione links para downloads de materiais como slides, PDFs ou vídeos.</p>
+            <ul>
+                <li><a href="#">Slide do Seminário</a></li>
+                <li><a href="#">PDF do Resumo</a></li>
+                <li><a href="#">Vídeo da Apresentação</a></li>
+            </ul>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Contato</h2>
+            <p>Para dúvidas ou mais informações, entre em contato:</p>
+            <p>Email: <a href="mailto:seuemail@example.com">@cecyliabeatriz421</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Resumo do Seminário. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Instruções para criar um repositório Git localmente -->
+    <!--
+    1. Abra o terminal na pasta onde este arquivo HTML está localizado.
+    2. Inicialize um repositório Git nesta pasta:
+       git init
+    3. Adicione todos os arquivos ao repositório:
+       git add .
+    4. Faça o primeiro commit:
+       git commit -m "Primeiro commit do projeto"
+    5. (Opcional) Conecte este repositório a um repositório remoto no GitHub:
+       git remote add origin https://github.com/Cecistile/resumo-seminario.git
+    6. (Opcional) Envie os arquivos para o GitHub:
+       git push -u origin master
+    -->
+</body>
+</html>
